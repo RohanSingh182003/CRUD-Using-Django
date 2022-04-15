@@ -1,0 +1,24 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href={%static "css/update.css"%}>
+    <title>Crud | Update</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Update Data From Here</h1>
+        <p style="color:green"><strong>{{success}}</strong></p>
+        <form action="/update/{{upd_id}}" method="post">
+            {% csrf_token %}
+            <input type="text" name="first" id="first" placeholder="Enter Updated First Name Here"> <br> <br>
+            <input type="text" name="last" id="last" placeholder="Enter Updated Last Name Here"> <br> <br>
+            <button type="submit" class="btn" id="submit">Update Data</button>
+            <button class="btn" id="home"><a href="/">View Database</a></button>
+        </form>
+    </div>
+</body>
+</html>

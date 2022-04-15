@@ -1,0 +1,81 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
+.container{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    position: relative;
+}
+h1{
+    font-size: 3rem;
+    margin-top: 60px;
+}
+p{
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+form{
+    width: 100%;
+    min-width: 200px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+input{
+    font-size: 1.2rem;
+    width: 310px;
+    min-width: 200px;
+    height: auto;
+    padding: 10px 15px;
+    border-radius: 6px;
+    position: absolute;
+    text-align: center;
+}
+#first{
+    margin-top: 80px;
+}
+#last{
+    margin-top: 160px;
+}
+#submit{
+    margin-top: 180px;
+    color: green;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+#submit:hover{
+    background-color: green;
+    color: azure;
+}
+.btn{
+    margin: 10px auto;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+.btn:hover{
+    font-weight: bolder;
+}
+a{
+    text-decoration: none;
+    padding:15px;
+
+}
+a:hover{
+    color: azure;
+}
+#home{
+    color: red;
+    font-weight: bold;
+}
+#home:hover{
+    background-color: blue;
+}

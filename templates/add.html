@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href={%static "css/add.css"%}>
+    <title>CRUD | Add Data</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Add Members</h1>
+        <p><strong style="color: green;">{{success}}</strong></p>
+        <form action="/add/" method="POST">
+            {% csrf_token %} 
+            <input type="text" name="first" id="first" placeholder="Enter First Name"> <br> <br>
+            <input type="text" name="last" id="last" placeholder="Enter Last Name"> <br> <br>
+            <button type="submit" class="btn" id="submit">Submit</button>
+            <button class="btn" id="home"><a href="/">View Database</a></button>
+        </form>
+    </div>
+</body>
+
+</html>
